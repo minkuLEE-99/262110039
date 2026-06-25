@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>테슬라 슈퍼차저</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+      <div class="logo-wrap">
+    <img src="tesla-logo.png" class="logo-img" />
+  </div>
+  <h1>Supercharger Map</h1>
+  <input id="searchInput" type="text" placeholder="Search chargers..." />
+  </header>
+
+  <main>
+    <div id="stationList"></div>
+  </main>
+
+  <!-- 모달 -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h2 id="modalTitle"></h2>
+      <p id="modalInfo"></p>
+      <button onclick="closeModal()">닫기</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+<!-- 스플래시 화면 -->
+<div id="splash">
+  <div class="splash-content">
+    <div class="logo">T</div>
+    <h1>테슬라 슈퍼차저</h1>
+  </div>
+</div>
+</html>
